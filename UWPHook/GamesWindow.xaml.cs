@@ -698,6 +698,8 @@ namespace UWPHook
 
             // hack for automatic export
             ExportButton_Click(null, new RoutedEventArgs());
+            // shut down after export in my fork :)
+            System.Windows.Application.Current.Shutdown();
         }
 
         /// <summary>
