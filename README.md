@@ -17,11 +17,18 @@ C:\Users\yourName\codeProjects\UWPHook\UWPHook\bin\Release. You should see the f
 
 ## Premade downloads
 
-I can't see how to package this app, so if you want this hacky version then follow the above steps.
+tldr; don't exist, not happening
+You can see all the source code changes VS the main repo, and build it yourself.
+If you want this hacky version then follow the above steps.
 
 ## Recommended usage
 
-First, uninstall the official UWPHook
+- Uninstall the official UWPHook.
+- Create a runnable .exe, and configure it as you like
+- Edit GamesWindow.xaml.cs, turning the line `/// Application.Current.Shutdown();` into `Application.Current.Shutdown();`. 
+    - UWPHook will do its magic, restart Steam, and then close itself
+- Follow either/both the following `Run` sections
+
 
 ### Run on startup
 - Create a Release .exe (see above)

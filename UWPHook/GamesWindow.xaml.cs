@@ -176,6 +176,10 @@ namespace UWPHook
                 await ExportGames();
                 await RestartSteam(restartSteam);
 
+                /// Hope that steam always restarts sucessfully
+                /// TODO remove /// when you have your UWPHook app configured 
+                /// Application.Current.Shutdown();
+
                 msg = "Your apps were successfuly exported!";
                 if (!restartSteam)
                 {
@@ -698,8 +702,6 @@ namespace UWPHook
 
             // hack for automatic export
             ExportButton_Click(null, new RoutedEventArgs());
-            // shut down after export in my fork :)
-            System.Windows.Application.Current.Shutdown();
         }
 
         /// <summary>
