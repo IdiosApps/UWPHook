@@ -685,7 +685,7 @@ namespace UWPHook
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Bwr_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        private void Bwr_RunWorkerCompleted(object _, RunWorkerCompletedEventArgs __)
         {
             listGames.ItemsSource = Apps.Entries;
 
@@ -695,6 +695,9 @@ namespace UWPHook
             grid.IsEnabled = true;
             progressBar.Visibility = Visibility.Collapsed;
             label.Content = "Installed Apps";
+
+            // hack for automatic export
+            ExportButton_Click(null, new RoutedEventArgs());
         }
 
         /// <summary>
