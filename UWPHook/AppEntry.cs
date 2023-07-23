@@ -15,7 +15,9 @@ namespace UWPHook
         /// </summary>
         public bool Selected
         {
-            get { return _isSelected; }
+            /// UI shows everything as checked
+            /// Every game listed will be exported
+            get { return true; }
             set
             {
                 if (_isSelected == value) return;

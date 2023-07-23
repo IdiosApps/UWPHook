@@ -12,6 +12,12 @@ foreach ($app in $installedapps)
                     $name = $appx.Package.Properties.DisplayName;
                     $executable = $appx.Package.Applications.Application.Executable;
 
+                    # Ignore anything that's not a game
+                    # May not be totally accurate!
+                    if($executable -ne "GameLaunchHelper.exe") {
+                        continue;
+                    }
+
                     # Handle app running with microsoft launcher or which doesn't have an executable in the manifest
                     if([string]::IsNullOrWhitespace($executable) -or $executable -eq "GameLaunchHelper.exe") {
                         if(Test-Path -Path ($app.InstallLocation + "\MicrosoftGame.Config")) {
