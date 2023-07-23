@@ -31,7 +31,7 @@ If you want this hacky version then follow the above steps.
 - Follow either/both the following `Run` sections
 
 
-### Run on startup
+### Run on startup (not recommended whilst "recently played" TODO exists)
 - Create a Release .exe (see above)
 - Right click the .exe, and make a shortcut
 - Move the shortcut to %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
