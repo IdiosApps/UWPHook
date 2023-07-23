@@ -6,7 +6,8 @@ This is just a hack to:
 - filter to all games (w/ PowerShell tweaks)
 - always select all games (UI tweaks)
 
-It's good enough for me, but may not be perfectly accurate.
+I wrote down my ideas/notes on [this UWPHook issue](https://github.com/BrianLima/UWPHook/issues/64#issuecomment-1646875329)
+This hack is good enough for me - but may not be perfectly accurate, and may not be good enough for you!
 
 ## Local development setup / build
 
