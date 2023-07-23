@@ -44,3 +44,12 @@ If you want this hacky version then follow the above steps.
 - Browse for `UWPHook.exe - Shortcut`, or the actual executable `.......UWPHook\UWPHook\bin\Release\UWPHook.exe`
 - Check `UWPHook.exe - Shortcut`
 - Click `Add selected programs`
+
+## TODO
+
+### "recently played" always replaced
+
+Should filter games which are already in Steam
+Ideally ask Steam about this (via AUMID?)
+Alternatively, have some file store of the games list (name or AUMID?), and only add what isn't in there. 
+If there's nothing to add, don't restart Steam
